@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Refaat Projects|Text Editors</title>
+    <!-- css styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style.css">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="section">
+   
+    <div class="item">
+        <input type="number"  id="font-size-input" min="8" max="96" value="12" onchange="changeTextSize(this)">
+    </div>
+    <div class="item ms-2">
+        <i class="bx bx-bold" onclick="boldText()"></i>
+    </div>
+    <div class="item">
+        <i class="bx bx-italic" onclick="italicText()"></i>
+    </div>
+    <div class="item me-2 d-none d-md-block">
+        <i class="bx bx-underline " onclick="underlineText()" ></i>
+    </div>
+    <div class="item ms-2">
+        <i class="bx bx-align-left " onclick="alignTextToLeft()"></i>
+    </div>
+    <div class="item">
+        <i class="bx bx-align-middle "onclick="alignTextToMiddle()" ></i>
+    </div>
+    <div class="item me-2">
+        <i class="bx bx-align-right " onclick="alignTextToRight()"></i>
+    </div>
+    <div class="item me-2 d-none d-md-block">
+       <input type="color" name="" id="text-color" onchange="changeTextColor(this)">
+    </div>
+</div>
+<div class="area">
+    <textarea name="" id="textareaId" placeholder="Write your text" ></textarea>
+</div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
